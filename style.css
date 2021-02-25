@@ -1,0 +1,363 @@
+/* main */
+body, html{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.h2-title{
+    margin-top: 5rem;
+    font-weight: bold;
+}
+
+h2{
+    font-weight: bold;
+    display:block;
+}
+
+p{
+    line-height: 2rem;
+    font-size: 25px;
+}
+
+/* buttons */
+.btn{
+    transition: .75s;
+    letter-spacing: 3px;
+}
+
+.btn-outline-secondary{
+    background-color: rgba(125, 179, 44, 0.863);
+    color:#ffffff;
+    border-radius: 5rem;
+    width: 11rem;
+    padding: 1rem;
+    border:none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.btn-outline-secondary:hover{
+    background-color:rgb(18, 221, 18);
+}
+
+
+/* header and navigation */
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    background-image: url(Images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+nav{
+    border-bottom: .2px solid rgba(255, 247, 247, 0.747);
+}
+
+.logo{
+    color:rgba(255, 247, 247, 0.747);
+    letter-spacing: 10px;
+    transition: 2s;
+}
+
+.nav-link{
+    color:rgba(255, 247, 247, 0.747);
+}
+
+.nav-link:hover{
+    color:white;
+}
+
+.home{
+    color: rgba(125, 179, 44, 0.863);
+}
+
+
+/* Dramatically Engaging Header Content */
+.header{
+    color:white;
+    text-align: center;
+    padding: 18rem 1rem 15rem 1rem;
+}
+
+.header h1{
+    font-size: 7rem;  
+}
+
+.header p{
+    padding-bottom: 2rem;
+}
+
+/* Fire Icon */
+.fab{
+    order: -1;
+    color:rgba(255, 247, 247, 0.747);
+    font-size: 30px;
+}
+
+.fab:hover{
+    color:white;
+}
+
+/* Content One */
+.content_one{
+    background-color: rgba(125, 179, 44, 0.863);
+    color:white;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.content_one p{
+    font-size: 22px;
+}
+
+.fa-apple-alt{
+    font-size: 50px;
+    margin-top: 2rem;
+}
+
+/* Content Two */
+.content_two{
+    padding:2rem;
+}
+
+/* Content Three */
+.content_three{
+    color: white;
+    background-color: rgb(33, 36, 44);
+}
+
+.testing{
+    background-color: white;
+    color:rgb(26, 27, 29);
+    width:8rem;
+    transition: 2s;
+}
+
+.testing:hover{
+    background-color: rgba(185, 185, 185, 0.397);
+    transition: 2s;
+}
+
+/* Content Two and Three Images */
+.microphone, .phone{
+    border-radius: 70%;
+    height: 22rem;
+    width: 30rem;
+    margin: 5rem;  
+}
+
+/* Image Content */
+h5{
+    text-align: center;
+    padding: 5rem 0;
+    font-weight: 700;
+    font-size: 40px;
+    color:rgb(255, 255, 255);
+}
+
+.image-title{
+    text-decoration: none;
+}
+
+.image_set{
+    height:20rem;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.item-1{
+    background-image: url(Images/unleash_photo.jpg);
+    background-size:cover;
+    background-position: 50% 50%;
+}
+
+.item-2{
+    background-image: url(Images/synergize_photo.jpg);
+    background-size:cover;
+    background-position: 50% 50%;
+}
+
+.item-3{
+    background-image: url(Images/procrastinate.jpg);
+    background-size:cover;
+    background-position: 50% 50%;
+}
+
+.card{
+    transition: 1s;
+}
+
+.card:hover{
+    transition:1s;
+    border:15px solid rgba(255, 255, 255, 0.425);
+}
+
+/* Content Four */
+.content_four{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.fa-thumbtack{
+    font-size: 30px;
+    margin-top: 2rem;
+    color: rgba(125, 179, 44, 0.863);
+}
+
+/* Footer */
+.contact{
+    background-color: rgba(125, 179, 44, 0.863);
+    text-align: center;
+    position:relative;
+    padding: 4.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.contact p{
+    padding: 1rem;
+}
+
+.contact-img{
+    font-size: 30px;
+}
+
+.copyright{
+    color:rgb(128, 128, 128);
+    text-align: center;
+    padding: 1.75rem 0;
+    margin-bottom: 2rem;
+}
+
+
+/* Media Queries */
+@media screen and (max-width:1212px) {
+    .header{
+        text-align:center;
+        transition: .7s;
+    }
+
+    .content_one{
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width:978px){
+    .phone{
+        height: 22rem;
+        width: 35rem;
+        margin-top:10rem;
+    }
+
+    .content_two p {
+        font-size:20px;
+    }
+
+    .microphone{
+        height: 25rem;
+        width: 35rem;
+    }
+
+    .image_set{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        width:100%;
+    }
+}
+
+
+@media screen and (max-width: 777px){
+    body, html{
+        margin:0;
+        padding:0;
+    }
+
+    header{
+        height: 42vh;
+    }
+
+    .header{
+       padding:3rem;
+    }
+
+    .header h1 {
+        font-size: 50px;
+    }
+
+    .header p{
+        font-size: 20px;
+    }
+
+    .navbar{
+        background-color: white;
+        padding:0;
+    }
+
+    .nav-link{
+        color:black;
+    }
+
+    .content_one{
+        padding:0 0 5rem 0;
+    }
+
+    .content_two p, .content_three p {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .logo{
+        color: rgba(125, 179, 44, 0.863);
+        margin:0;
+        text-align: right;
+        letter-spacing: 0px;
+        font-size: 25px;
+        transition: 2s;
+    }
+
+    .logo:hover{
+        color:rgb(167, 14, 14);
+        transition: 1s;
+    }
+
+    .home{
+        color:rgba(147, 211, 52, 0.863);
+    }
+
+    .nav-link:hover{
+        color: rgba(125, 179, 44, 0.863);
+        transition: 1s;
+    }
+
+    .microphone, .phone {
+        height: 25rem;
+        width: 35rem; 
+        padding:0;
+        margin:0;
+    }
+}
+
+@media screen and (max-width:500px){
+    .phone {
+        height: 13rem;
+        width: 20rem; 
+        margin: 0 5rem 2rem 5rem;
+    }
+
+    .microphone {
+        height: 13rem;
+        width: 20rem; 
+    }
+}
