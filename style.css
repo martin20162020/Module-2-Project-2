@@ -241,18 +241,6 @@ h5{
 
 
 /* Media Queries */
-@media screen and (max-width:1212px) {
-    .header{
-        text-align:center;
-        transition: .7s;
-    }
-
-    .content_one{
-        padding: 0;
-    }
-}
-
-
 @media screen and (max-width:978px){
     .phone{
         height: 22rem;
@@ -275,10 +263,16 @@ h5{
         justify-content: center;
         width:100%;
     }
+
+    .phone{
+        height: 25rem;
+        width: 35rem; 
+        margin-top:0px;
+    }
 }
 
 
-@media screen and (max-width: 777px){
+@media screen and (max-width: 770px){
     body, html{
         margin:0;
         padding:0;
@@ -289,7 +283,7 @@ h5{
     }
 
     .header{
-       padding:3rem;
+        padding-top: 2.3rem;
     }
 
     .header h1 {
@@ -298,6 +292,7 @@ h5{
 
     .header p{
         font-size: 20px;
+        padding:0;
     }
 
     .navbar{
@@ -341,23 +336,38 @@ h5{
         transition: 1s;
     }
 
-    .microphone, .phone {
+    .microphone {
         height: 25rem;
-        width: 35rem; 
+        width: 34rem; 
         padding:0;
         margin:0;
     }
+
+    .phone{
+        height: 20rem;
+        width: 32rem; 
+        padding:20px;
+        margin: 0 0 5rem 0;
+    }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
     .phone {
-        height: 13rem;
-        width: 20rem; 
-        margin: 0 5rem 2rem 5rem;
+        height: 15rem;
+        width: 25rem; 
+        margin-bottom: 2rem;
     }
 
     .microphone {
         height: 13rem;
-        width: 20rem; 
+        width: 22rem; 
+    }
+
+    header{
+        height:55vh;
+    }
+
+    nav{
+        width:100vw;
     }
 }
