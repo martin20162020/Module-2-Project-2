@@ -145,11 +145,31 @@ nav{
 }
 
 /* Content Two and Three Images */
-.microphone, .phone{
+.microphone {
+    border-radius: 70%;
+    height: 30rem;
+    width: 40rem;  
+}
+
+.microphone-section{
+    margin: 0rem 1rem 0 0; 
+}
+
+.phones-section{
+    margin: 1rem;  
+}
+
+.phone{
     border-radius: 70%;
     height: 22rem;
-    width: 30rem;
-    margin: 5rem;  
+    width: 30rem; 
+}
+
+.img-fluid {
+    height: 30rem;
+    width: 100rem;
+    max-width: 100%;
+    max-height: 90%;
 }
 
 /* Image Content */
@@ -241,20 +261,24 @@ h5{
 
 
 /* Media Queries */
-@media screen and (max-width:978px){
+@media screen and (max-width:993px){
     .phone{
-        height: 22rem;
+        height: 25rem;
         width: 35rem;
-        margin-top:10rem;
+        margin-top:0px;
     }
 
     .content_two p {
         font-size:20px;
     }
 
-    .microphone{
-        height: 25rem;
-        width: 35rem;
+    /* .microphone{
+        height: 19rem;
+    } */
+
+    .img-fluid{
+        height: 20rem;
+        width: 70rem;
     }
 
     .image_set{
@@ -272,7 +296,7 @@ h5{
 }
 
 
-@media screen and (max-width: 770px){
+@media screen and (max-width: 767px){
     body, html{
         margin:0;
         padding:0;
@@ -338,9 +362,11 @@ h5{
 
     .microphone {
         height: 25rem;
-        width: 34rem; 
-        padding:0;
-        margin:0;
+        width: 34rem;
+    }
+
+    .microphone-section{
+        margin: 2rem 0 1rem 0; 
     }
 
     .phone{
@@ -359,12 +385,35 @@ h5{
     }
 
     .microphone {
-        height: 13rem;
+        height: 15rem;
         width: 22rem; 
     }
 
     header{
         height:55vh;
+    }
+
+    nav{
+        width:100vw;
+    }
+}
+
+@media screen and (max-width:420px){
+    .phone {
+        height: 10rem;
+        width: 13rem; 
+        margin-bottom: 2rem;
+    }
+
+    .microphone {
+        height: 10rem;
+        width: 12rem; 
+    }
+
+    header{
+        height:100vh;
+        padding-top:4rem;
+        margin:0;
     }
 
     nav{
